@@ -1,0 +1,199 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 15px;
+}
+.header{
+    height: 46.5px;
+    background: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.menu{
+    list-style: none;
+    display: inline-block;
+}
+.menu li{
+    display: inline-block;
+    padding: 14.5px 24px;
+    cursor: pointer;
+    position: relative;
+}
+.menu li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+.menu li:hover{
+    background: grey;
+}
+.header i{
+    float: right;
+    color: white;
+    padding: 15.5px 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.header i:hover{
+    background: red;
+}
+.sub-menu{
+    background: white;
+    list-style: none;
+    position: absolute;
+    margin: 14px 0 0 -24px;
+    display: none;
+}
+.sub-menu > li{
+    width: 100%;
+}
+.sub-menu li a{
+    text-decoration: none;
+    color: black;
+}
+.menu li:hover > .sub-menu{
+    display: block;
+}
+#img-slide{
+    margin-top: 46.5px;
+}
+.slider img{
+    width: 100%;
+}
+.content{
+    text-align: center;
+    padding: 64px 16px 0 16px !important;
+}
+.content h1{
+    font-size: 45px;
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+.content span{
+    font-size: 20px;
+    margin: 15px 0;
+}
+.content p{
+    text-align: justify;
+    margin: 15px 0;
+    font-size: 18px;
+}
+.slide-container{
+    display: flex;
+    margin-bottom: 32px !important;
+}
+.row{
+    width: 33.33%;
+}
+.topic{
+    text-align: center;
+}
+.topic h3{
+    padding: 15px 0;
+    font-weight: 300;
+}
+.topic img{
+    width: 60%;
+    height: 60%;
+    border-radius: 10px;
+}
+.tour{
+    background: black;
+    height: 850px;
+    width: 100%;
+}
+.tour-header{
+    text-align: center;
+}
+.tour-header h2{
+    color: white;
+    text-transform: uppercase;
+    padding: 15px 0;
+}
+.tour-header i{
+    color: white;
+    margin: 15px 0;
+}
+.time-out{
+    background: white;
+    height: 48px;
+    display: flex;
+    border-bottom: 1px solid grey;
+}
+.tour-time{
+    margin-top: 50px;
+}
+
+.time-out p{
+    line-height: 48px;
+    color: grey;
+    padding-left: 15px;
+}
+.time-out button{
+    height: 30px;
+    width: 70px;
+    margin: auto 0;
+    margin-left: 30px;
+    border: none;
+    background: #f44336;
+    color: white;
+    cursor: auto;
+}
+.time-out span{
+    margin-left: 650px;
+    padding: 10px 10px;
+    background: black;
+    color: white;
+    border-radius: 50%;
+    margin: auto 650px;
+}
+.layout-ticket{
+    margin-top: 40px;
+}
+.row-ticket{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.colum{
+    width: 32%;
+}
+.colum img{
+    width: 100%;
+}
+.content-ticket{
+    background: white;
+    height: 200px;
+    margin-top: -5px;
+}
+.content-ticket h2{
+    font-size: 15px;
+    padding: 20px 10px 20px 10px;
+}
+.content-ticket .titles{
+    opacity: 0.6;
+    padding-bottom: 15px;
+    margin-left: 10px;
+}
+.content-ticket p {
+    font-weight: bolder;
+    margin-left: 10px;
+    display: block;
+}
+.content-ticket button{
+    padding: 10px 20px;
+    margin-left: 10px;
+    background: black;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+.content-ticket button:hover{
+    background: turquoise;
+    color: black;
+}

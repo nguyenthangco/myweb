@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/css.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./fontawesome/css/all.css">
+</head>
+<body>
+    <div class="header">
+        <ul class="menu">
+            <li><a href="#">home</a></li>
+            <li><a href="#">band</a></li>
+            <li><a href="#">tour</a></li>
+            <li><a href="#">contact</a></li>
+            <li><a href="#">more</a>
+                <ul class="sub-menu">
+                    <li><a href="#">Merchandise</a></li>
+                    <li><a href="#">Extras</a></li>
+                    <li><a href="#">Media</a></li>
+                </ul>
+            </li>
+        </ul>
+        <i class="fas fa-search"></i>
+    </div>
+    <div class="slider">
+        <img id="img-slide" onclick="changeImg()" src="./img/chicago.jpg" alt="">
+    </div>
+    <div class="container">
+       <div class="content wrap">
+           <h1>the band</h1>
+           <span>we love music</span>
+           <p>We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+       </div>
+       <div class="slide-container wrap">
+            <div class="row">
+                <div class="topic">
+                    <h3>Name</h3>
+                    <img src="./img/1.jpg" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="topic">
+                    <h3>Name</h3>
+                    <img src="./img/2.jpg" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="topic">
+                    <h3>Name</h3>
+                    <img src="./img/3.jpg" alt="">
+                </div>
+            </div>
+       </div>
+       <div class="tour">
+            <div class="tour-content wrap">
+                <div class="tour-header">
+                    <h2>tour date</h2>
+                    <i>Remember to book your tickets!</i>
+                </div>
+                <div class="tour-time">
+                    <div class="time-out">
+                        <p>September </p>
+                        <button>Sold out</button>
+                    </div>
+                    <div class="time-out">
+                        <p>October</p>
+                        <button>Sold out</button>
+                    </div>
+                    <div class="time-out">
+                        <p>November</p>
+                        <span>3</span>
+                    </div>
+                </div>
+                <div class="layout-ticket">
+                    <div class="row-ticket">
+                        <div class="colum">
+                            <img src="./img/newyork.jpg" alt="">
+                            <div class="content-ticket">
+                                <h2>New York</h2>
+                                <p class="titles">Fri 27 Nov 2016</p>
+                                <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p><br>
+                                <button>Buy Ticket</button>
+                            </div>
+                        </div>
+                        <div class="colum">
+                            <img src="./img/paris.jpg" alt="">
+                            <div class="content-ticket">
+                                <h2>New York</h2>
+                                <p class="titles">Fri 27 Nov 2016</p>
+                                <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p><br>
+                                <button>Buy Ticket</button>
+                            </div>
+                        </div>
+                        <div class="colum">
+                            <img src="./img/sanfran.jpg" alt="">
+                            <div class="content-ticket">
+                                <h2>New York</h2>
+                                <p class="titles">Fri 27 Nov 2016</p>
+                                <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p><br>
+                                <button>Buy Ticket</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </div>
+    </div>
+    <div class="footer">
+
+    </div>
+    <script>
+        var index = 1;
+        changeImg = function(){
+            var imgs = ["./img/chicago.jpg", "./img/la.jpg", "./img/ny.jpg"];
+            document.getElementById("img-slide").src = imgs[index];
+            index++;
+            if(index==3){
+                index=0;
+            }
+        }
+        setInterval(changeImg, 2000);
+    </script>
+</body>
+</html>
